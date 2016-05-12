@@ -8,4 +8,4 @@ function applyDiscount(cost, discount = defaultDiscountRate()) {
 
 // alert(applyDiscount(100, 0.10));
 
-alert(applyDiscount(100))
+console.log(applyDiscount(100));
