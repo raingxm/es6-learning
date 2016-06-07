@@ -5,5 +5,14 @@ let person = {
 
 let {name, age} = person;
 
-console.log('es6 destructure');
-console.log(name);
+
+function getData({results, count}) {
+	console.log(results, count);
+}
+
+getData({
+	name: 'zhangxu',
+	age: 26,
+	results: ['food', 'drink'],
+	count: 33
+})
