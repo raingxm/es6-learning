@@ -5,6 +5,19 @@ let person = {
 
 let {name, age} = person;
 
+function getPerson() {
+	let name = 'zhangxu';
+	let age = 23;
+	return {
+		name,
+		age,
+		greet() { // ES^
+			return `Hello, ${this.name}. And I'm ${this.age} old`;
+		}
+	}
+}
+
+console.log(getPerson().greet());
 
 function getData({results, count}) {
 	console.log(results, count);
