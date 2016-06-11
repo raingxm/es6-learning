@@ -1,16 +1,17 @@
-// ES 5 way
+// ES 6 way
 
-function User(username, email) {
-  this.username = username;
-  this.email = email;
+class User {
+  constructor(username, email) {
+    this.username = username;
+    this.email = email;
+  }
+
+  changeEmail(newEmail) {
+    this.email = newEmail;
+  }
 }
 
-User.prototype.changeEmailAddress = function(newEmail) {
-  this.email = newEmail;
-};
+let me = new User('zhangxu', 'raingxm@gmail.com');
+me.changeEmail('raingxm@163.com');
 
-var user = new User('zhangxu', 'raingxm@gmail.com');
-
-user.changeEmailAddress('raingxm@163.com');
-
-console.dir(user);
+console.dir(me);
