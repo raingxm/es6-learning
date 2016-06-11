@@ -6,8 +6,8 @@ class User {
     this.email = email;
   }
 
-  static register(username, email) {
-    return new User(username, email);
+  static register(...args) {
+    return new User(...args);
   }
 
   changeEmail(newEmail) {
