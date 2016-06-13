@@ -1,4 +1,4 @@
-export class TaskCollection {
+export default class TaskCollection {
   constructor(tasks = []) {
     this.tasks = tasks;
   }
@@ -9,7 +9,3 @@ export class TaskCollection {
 }
 
 export let foo = 'bar';
-
-export myfunc = function() {
-
-};
