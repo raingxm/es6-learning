@@ -8,3 +8,8 @@ export class TaskCollection {
   }
 }
 
+export let foo = 'bar';
+
+export myfunc = function() {
+
+};
