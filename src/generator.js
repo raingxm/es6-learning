@@ -8,3 +8,7 @@ function *range(start, end) {
 let iterator = range(1, 5);
 
 for (let i of iterator) console.log(i);
+
+console.log(
+  [...range(1, 6)]
+);
