@@ -6,7 +6,5 @@ function *range(start, end) {
 }
 
 let iterator = range(1, 5);
-console.log(iterator.next());
-console.log(iterator.next());
-console.log(iterator.next());
-console.log(iterator.next());
+
+for (let i of iterator) console.log(i);
